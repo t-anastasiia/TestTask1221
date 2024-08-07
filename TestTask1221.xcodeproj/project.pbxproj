@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		31A69A9D2C639D6A00165025 /* TestTask1221App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69A9C2C639D6A00165025 /* TestTask1221App.swift */; };
-		31A69A9F2C639D6A00165025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69A9E2C639D6A00165025 /* ContentView.swift */; };
+		31A69A9F2C639D6A00165025 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69A9E2C639D6A00165025 /* MainView.swift */; };
 		31A69AA12C639D6D00165025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31A69AA02C639D6D00165025 /* Assets.xcassets */; };
 		31A69AA42C639D6D00165025 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31A69AA32C639D6D00165025 /* Preview Assets.xcassets */; };
+		31A69AB32C63A0D900165025 /* PriceLabelsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB22C63A0D900165025 /* PriceLabelsEnum.swift */; };
+		31A69AB52C63A16100165025 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB42C63A16100165025 /* Product.swift */; };
+		31A69AB72C63A2CB00165025 /* ProductsViewTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB62C63A2CB00165025 /* ProductsViewTypeEnum.swift */; };
+		31A69ABA2C63A95700165025 /* GridProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB92C63A95700165025 /* GridProductView.swift */; };
+		31A69ABC2C63A96100165025 /* ListProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69ABB2C63A96100165025 /* ListProductView.swift */; };
+		31A69AC42C63C25000165025 /* CeraRoundPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31A69AC32C63C1C100165025 /* CeraRoundPro-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		31A69A992C639D6A00165025 /* TestTask1221.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask1221.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31A69A9C2C639D6A00165025 /* TestTask1221App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTask1221App.swift; sourceTree = "<group>"; };
-		31A69A9E2C639D6A00165025 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		31A69A9E2C639D6A00165025 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		31A69AA02C639D6D00165025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31A69AA32C639D6D00165025 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31A69AB22C63A0D900165025 /* PriceLabelsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLabelsEnum.swift; sourceTree = "<group>"; };
+		31A69AB42C63A16100165025 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		31A69AB62C63A2CB00165025 /* ProductsViewTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewTypeEnum.swift; sourceTree = "<group>"; };
+		31A69AB92C63A95700165025 /* GridProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridProductView.swift; sourceTree = "<group>"; };
+		31A69ABB2C63A96100165025 /* ListProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductView.swift; sourceTree = "<group>"; };
+		31A69AC22C63BF7300165025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		31A69AC32C63C1C100165025 /* CeraRoundPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CeraRoundPro-Bold.otf"; path = "../../../../../Downloads/CeraRoundPRO/CeraRoundPro-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +64,11 @@
 		31A69A9B2C639D6A00165025 /* TestTask1221 */ = {
 			isa = PBXGroup;
 			children = (
-				31A69A9C2C639D6A00165025 /* TestTask1221App.swift */,
-				31A69A9E2C639D6A00165025 /* ContentView.swift */,
-				31A69AA02C639D6D00165025 /* Assets.xcassets */,
+				31A69AC22C63BF7300165025 /* Info.plist */,
+				31A69AAC2C639FC000165025 /* Application */,
+				31A69AAF2C639FE400165025 /* Resources */,
+				31A69AAE2C639FCE00165025 /* Presentation */,
+				31A69AAB2C639F8100165025 /* Domain */,
 				31A69AA22C639D6D00165025 /* Preview Content */,
 			);
 			path = TestTask1221;
@@ -65,6 +80,75 @@
 				31A69AA32C639D6D00165025 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31A69AAB2C639F8100165025 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				31A69AB12C63A0BC00165025 /* Enums */,
+				31A69AB02C63A0B600165025 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		31A69AAC2C639FC000165025 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				31A69A9C2C639D6A00165025 /* TestTask1221App.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		31A69AAE2C639FCE00165025 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				31A69AB82C63A94700165025 /* Products */,
+				31A69A9E2C639D6A00165025 /* MainView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		31A69AAF2C639FE400165025 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				31A69ABD2C63BEA200165025 /* Fonts */,
+				31A69AA02C639D6D00165025 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		31A69AB02C63A0B600165025 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				31A69AB42C63A16100165025 /* Product.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		31A69AB12C63A0BC00165025 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				31A69AB22C63A0D900165025 /* PriceLabelsEnum.swift */,
+				31A69AB62C63A2CB00165025 /* ProductsViewTypeEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		31A69AB82C63A94700165025 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31A69AB92C63A95700165025 /* GridProductView.swift */,
+				31A69ABB2C63A96100165025 /* ListProductView.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		31A69ABD2C63BEA200165025 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				31A69AC32C63C1C100165025 /* CeraRoundPro-Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31A69AA42C639D6D00165025 /* Preview Assets.xcassets in Resources */,
+				31A69AC42C63C25000165025 /* CeraRoundPro-Bold.otf in Resources */,
 				31A69AA12C639D6D00165025 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31A69A9F2C639D6A00165025 /* ContentView.swift in Sources */,
+				31A69ABA2C63A95700165025 /* GridProductView.swift in Sources */,
+				31A69AB72C63A2CB00165025 /* ProductsViewTypeEnum.swift in Sources */,
+				31A69ABC2C63A96100165025 /* ListProductView.swift in Sources */,
+				31A69A9F2C639D6A00165025 /* MainView.swift in Sources */,
+				31A69AB52C63A16100165025 /* Product.swift in Sources */,
 				31A69A9D2C639D6A00165025 /* TestTask1221App.swift in Sources */,
+				31A69AB32C63A0D900165025 /* PriceLabelsEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +365,7 @@
 				DEVELOPMENT_TEAM = S5A22857YR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestTask1221/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +395,7 @@
 				DEVELOPMENT_TEAM = S5A22857YR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestTask1221/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
