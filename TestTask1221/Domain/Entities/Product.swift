@@ -14,7 +14,7 @@ public struct Product: Identifiable, Hashable {
     public let previousPrice: Double
     public let currentPrice: Double    
     public let discount: Int?
-    public let saleType: PriceLabelsEnum?
+    public let saleType: PriceSaleEnum?
     public let rating: Double
     public let reviewsAmount: Int
     public let image: String
@@ -26,7 +26,7 @@ public struct Product: Identifiable, Hashable {
          previousPrice: Double,
          currentPrice: Double,
          discount: Int?,
-         saleType: PriceLabelsEnum?, 
+         saleType: PriceSaleEnum?, 
          rating: Double,
          reviewsAmount: Int,
          image: String,

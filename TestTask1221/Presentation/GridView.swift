@@ -9,7 +9,19 @@ import SwiftUI
 
 struct GridView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        let columns = [
+            GridItem(.flexible(), spacing: -35),
+            GridItem(.flexible())
+        ]
+        
+        ScrollView {
+            LazyVGrid(columns: columns, spacing: 7) {
+                ForEach(gridProduct, id: \.self) { product in
+                    GridItemView(product: product)
+                }
+            }
+        }
     }
 }
 

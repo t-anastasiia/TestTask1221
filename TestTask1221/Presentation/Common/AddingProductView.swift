@@ -36,7 +36,7 @@ struct AddingProductView: View {
                 HStack(spacing: 0) {
                     // логика явно должна быть другой, учитывать в чем измеряется продукт, сколько вообще для каждого продукта будет прибалвение и убавления (например капусту в пятерочке когда добавляешь, там по 1.2 или 0.6 шаг. сделала этот момент тут скорее демонстрационным, но не до конца проработанным, посколько явно 1кг != 1 шт, а сейчас именно так и работает
                     Button {
-                        if selectedAmountType == .weight && currentAmountWeight > 0.1 {
+                        if selectedAmountType == .weight && currentAmountWeight >= 0.2 {
                             currentAmountWeight -= 0.1
                             currentPrice = product.currentPrice * currentAmountWeight
                         } else if selectedAmountType == .piece && currentAmountPieces > 1 {

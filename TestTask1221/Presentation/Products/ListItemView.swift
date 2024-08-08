@@ -17,7 +17,9 @@ struct ListItemView: View {
     
     var body: some View {
         HStack(spacing: 16) {
-            imageView
+            ProductImageView(image: product.image,
+                             saleType: product.saleType,
+                             discount: product.discount)
             infoView
         }
         .frame(height: 144)
@@ -26,35 +28,7 @@ struct ListItemView: View {
 }
 
 extension ListItemView {
-    var imageView: some View {
-        Image(product.image)
-            .resizable()
-            .frame(width: 144, height: 144)
-            .overlay(alignment: .topLeading) {
-                if let sale = product.saleType {
-                    Text(sale.rawValue)
-                        .foregroundStyle(Color("TextStatic001"))
-                        .font(.system(size: 10))
-                        .padding(EdgeInsets(top: 2,
-                                            leading: 12,
-                                            bottom: 4,
-                                            trailing: 6))
-                        .background(RoundedCornerShape(tlRadius: 10,
-                                                       trRadius: 6,
-                                                       brRadius: 6,
-                                                       blRadius: 0)
-                            .fill(Color(product.saleType == .hitPrice ? "HitPrice001" : "NewProduct001"))
-                        )
-                }
-            }
-            .overlay(alignment: .bottomTrailing) {
-                if let discount = product.discount {
-                    Text("\(discount)%")
-                        .font(.custom("CeraRoundPro-Bold", size: 16))
-                        .foregroundStyle(Color("Additional004"))
-                }
-            }
-    }
+
     var infoView: some View {
         VStack(spacing: 0) {
             HStack(spacing: 0) {
@@ -64,7 +38,7 @@ extension ListItemView {
                     HStack(spacing: 0) {
                         Text(product.name)
                             .font(.system(size: 12))
-                            .foregroundStyle(Color("TextIcons003"))
+                            .foregroundStyle(Color("TextIcons002"))
                             .multilineTextAlignment(.leading)
                             .frame(alignment: .leading)
                         

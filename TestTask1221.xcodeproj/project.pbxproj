@@ -11,7 +11,7 @@
 		31A69A9F2C639D6A00165025 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69A9E2C639D6A00165025 /* MainView.swift */; };
 		31A69AA12C639D6D00165025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31A69AA02C639D6D00165025 /* Assets.xcassets */; };
 		31A69AA42C639D6D00165025 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31A69AA32C639D6D00165025 /* Preview Assets.xcassets */; };
-		31A69AB32C63A0D900165025 /* PriceLabelsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB22C63A0D900165025 /* PriceLabelsEnum.swift */; };
+		31A69AB32C63A0D900165025 /* PriceSaleEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB22C63A0D900165025 /* PriceSaleEnum.swift */; };
 		31A69AB52C63A16100165025 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB42C63A16100165025 /* Product.swift */; };
 		31A69AB72C63A2CB00165025 /* ProductsViewTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB62C63A2CB00165025 /* ProductsViewTypeEnum.swift */; };
 		31A69ABA2C63A95700165025 /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB92C63A95700165025 /* GridItemView.swift */; };
@@ -30,6 +30,7 @@
 		31A69AE12C650FC600165025 /* CountryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AE02C650FC600165025 /* CountryLabel.swift */; };
 		31A69AE32C6511C200165025 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AE22C6511C200165025 /* ListView.swift */; };
 		31A69AE52C6511CE00165025 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AE42C6511CE00165025 /* GridView.swift */; };
+		31A69AE72C65162F00165025 /* ProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AE62C65162F00165025 /* ProductImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +39,7 @@
 		31A69A9E2C639D6A00165025 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		31A69AA02C639D6D00165025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31A69AA32C639D6D00165025 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		31A69AB22C63A0D900165025 /* PriceLabelsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLabelsEnum.swift; sourceTree = "<group>"; };
+		31A69AB22C63A0D900165025 /* PriceSaleEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceSaleEnum.swift; sourceTree = "<group>"; };
 		31A69AB42C63A16100165025 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		31A69AB62C63A2CB00165025 /* ProductsViewTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewTypeEnum.swift; sourceTree = "<group>"; };
 		31A69AB92C63A95700165025 /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		31A69AE02C650FC600165025 /* CountryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryLabel.swift; sourceTree = "<group>"; };
 		31A69AE22C6511C200165025 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		31A69AE42C6511CE00165025 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		31A69AE62C65162F00165025 /* ProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +95,9 @@
 				31A69AC92C6486F900165025 /* Data */,
 				31A69AC22C63BF7300165025 /* Info.plist */,
 				31A69AAC2C639FC000165025 /* Application */,
+				31A69AAB2C639F8100165025 /* Domain */,
 				31A69AAF2C639FE400165025 /* Resources */,
 				31A69AAE2C639FCE00165025 /* Presentation */,
-				31A69AAB2C639F8100165025 /* Domain */,
 				31A69AA22C639D6D00165025 /* Preview Content */,
 			);
 			path = TestTask1221;
@@ -159,7 +161,7 @@
 		31A69AB12C63A0BC00165025 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				31A69AB22C63A0D900165025 /* PriceLabelsEnum.swift */,
+				31A69AB22C63A0D900165025 /* PriceSaleEnum.swift */,
 				31A69AB62C63A2CB00165025 /* ProductsViewTypeEnum.swift */,
 				31A69AD32C64967500165025 /* CountryEnum.swift */,
 				31A69AD12C64941200165025 /* ProductAmountEnum.swift */,
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				31A69ACF2C64910A00165025 /* ActionListView.swift */,
+				31A69AE62C65162F00165025 /* ProductImageView.swift */,
 				31A69ADE2C64B90A00165025 /* PriceView.swift */,
 				31A69ADA2C64AF0700165025 /* AddingProductView.swift */,
 			);
@@ -295,6 +298,7 @@
 			files = (
 				31A69AD92C649C9200165025 /* RoundedCornerShape.swift in Sources */,
 				31A69AE32C6511C200165025 /* ListView.swift in Sources */,
+				31A69AE72C65162F00165025 /* ProductImageView.swift in Sources */,
 				31A69AD02C64910A00165025 /* ActionListView.swift in Sources */,
 				31A69ABA2C63A95700165025 /* GridItemView.swift in Sources */,
 				31A69AB72C63A2CB00165025 /* ProductsViewTypeEnum.swift in Sources */,
@@ -308,7 +312,7 @@
 				31A69AB52C63A16100165025 /* Product.swift in Sources */,
 				31A69ACD2C64878600165025 /* ListProducts.swift in Sources */,
 				31A69A9D2C639D6A00165025 /* TestTask1221App.swift in Sources */,
-				31A69AB32C63A0D900165025 /* PriceLabelsEnum.swift in Sources */,
+				31A69AB32C63A0D900165025 /* PriceSaleEnum.swift in Sources */,
 				31A69ADD2C64B52C00165025 /* Double+Ex.swift in Sources */,
 				31A69AD22C64941200165025 /* ProductAmountEnum.swift in Sources */,
 				31A69AE52C6511CE00165025 /* GridView.swift in Sources */,
