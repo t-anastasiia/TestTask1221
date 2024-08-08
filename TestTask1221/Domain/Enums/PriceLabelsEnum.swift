@@ -10,4 +10,5 @@ import Foundation
 public enum PriceLabelsEnum: String {
     case hitPrice = "Удар по ценам"
     case new = "Новинки"
+    case cardPrice = "Цена по карте"
 }

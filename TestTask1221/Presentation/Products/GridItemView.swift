@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct GridProductView: View {
+struct GridItemView: View {
     var body: some View {
         Text("Hello, World!")
     }
 }
 
 #Preview {
-    GridProductView()
+    GridItemView()
 }

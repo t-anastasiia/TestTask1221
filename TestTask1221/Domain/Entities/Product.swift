@@ -8,28 +8,48 @@
 import Foundation
 import SwiftUI
 
-public struct Product {
+public struct Product: Identifiable, Hashable {
     public let id: Int
-    public let previousPrice: Double?
+    public let name: String
+    public let previousPrice: Double
     public let currentPrice: Double    
     public let discount: Int?
     public let saleType: PriceLabelsEnum?
     public let rating: Double
+    public let reviewsAmount: Int
     public let image: String
+    public let amountType: ProductAmountEnum
+    public let country: CountryEnum?
     
     init(id: Int, 
-         previousPrice: Double?,
+         name: String,
+         previousPrice: Double,
          currentPrice: Double,
          discount: Int?,
          saleType: PriceLabelsEnum?, 
          rating: Double,
-         image: String) {
+         reviewsAmount: Int,
+         image: String,
+         amountType: ProductAmountEnum,
+         country: CountryEnum?) {
         self.id = id
+        self.name = name
         self.previousPrice = previousPrice
         self.currentPrice = currentPrice
         self.discount = discount
         self.saleType = saleType
         self.rating = rating
+        self.reviewsAmount = reviewsAmount
         self.image = image
+        self.amountType = amountType
+        self.country = country
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+    public static func == (lhs: Product, rhs: Product) -> Bool {
+        return lhs.id == rhs.id
     }
 }

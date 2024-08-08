@@ -9,12 +9,17 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State private var selectedProductsViewType: ProductsViewTypeEnum = .grid
+    @State private var selectedProductsViewType: ProductsViewTypeEnum = .list
     
     var body: some View {
         VStack(spacing: 0) {
             navigationBar
             Divider()
+            if selectedProductsViewType == .list {
+                ListView()
+            } else {
+                GridView()
+            }
         }
     }
 }

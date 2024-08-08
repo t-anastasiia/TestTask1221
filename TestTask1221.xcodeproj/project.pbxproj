@@ -14,9 +14,22 @@
 		31A69AB32C63A0D900165025 /* PriceLabelsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB22C63A0D900165025 /* PriceLabelsEnum.swift */; };
 		31A69AB52C63A16100165025 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB42C63A16100165025 /* Product.swift */; };
 		31A69AB72C63A2CB00165025 /* ProductsViewTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB62C63A2CB00165025 /* ProductsViewTypeEnum.swift */; };
-		31A69ABA2C63A95700165025 /* GridProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB92C63A95700165025 /* GridProductView.swift */; };
-		31A69ABC2C63A96100165025 /* ListProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69ABB2C63A96100165025 /* ListProductView.swift */; };
+		31A69ABA2C63A95700165025 /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AB92C63A95700165025 /* GridItemView.swift */; };
+		31A69ABC2C63A96100165025 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69ABB2C63A96100165025 /* ListItemView.swift */; };
 		31A69AC42C63C25000165025 /* CeraRoundPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31A69AC32C63C1C100165025 /* CeraRoundPro-Bold.otf */; };
+		31A69ACB2C64877D00165025 /* GridProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69ACA2C64877D00165025 /* GridProducts.swift */; };
+		31A69ACD2C64878600165025 /* ListProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69ACC2C64878600165025 /* ListProducts.swift */; };
+		31A69AD02C64910A00165025 /* ActionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69ACF2C64910A00165025 /* ActionListView.swift */; };
+		31A69AD22C64941200165025 /* ProductAmountEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AD12C64941200165025 /* ProductAmountEnum.swift */; };
+		31A69AD42C64967500165025 /* CountryEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AD32C64967500165025 /* CountryEnum.swift */; };
+		31A69AD72C64976100165025 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AD62C64976100165025 /* String+Ex.swift */; };
+		31A69AD92C649C9200165025 /* RoundedCornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AD82C649C9200165025 /* RoundedCornerShape.swift */; };
+		31A69ADB2C64AF0700165025 /* AddingProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69ADA2C64AF0700165025 /* AddingProductView.swift */; };
+		31A69ADD2C64B52C00165025 /* Double+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69ADC2C64B52C00165025 /* Double+Ex.swift */; };
+		31A69ADF2C64B90A00165025 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69ADE2C64B90A00165025 /* PriceView.swift */; };
+		31A69AE12C650FC600165025 /* CountryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AE02C650FC600165025 /* CountryLabel.swift */; };
+		31A69AE32C6511C200165025 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AE22C6511C200165025 /* ListView.swift */; };
+		31A69AE52C6511CE00165025 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A69AE42C6511CE00165025 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +41,23 @@
 		31A69AB22C63A0D900165025 /* PriceLabelsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceLabelsEnum.swift; sourceTree = "<group>"; };
 		31A69AB42C63A16100165025 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		31A69AB62C63A2CB00165025 /* ProductsViewTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewTypeEnum.swift; sourceTree = "<group>"; };
-		31A69AB92C63A95700165025 /* GridProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridProductView.swift; sourceTree = "<group>"; };
-		31A69ABB2C63A96100165025 /* ListProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductView.swift; sourceTree = "<group>"; };
+		31A69AB92C63A95700165025 /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
+		31A69ABB2C63A96100165025 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		31A69AC22C63BF7300165025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		31A69AC32C63C1C100165025 /* CeraRoundPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CeraRoundPro-Bold.otf"; path = "../../../../../Downloads/CeraRoundPRO/CeraRoundPro-Bold.otf"; sourceTree = "<group>"; };
+		31A69ACA2C64877D00165025 /* GridProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridProducts.swift; sourceTree = "<group>"; };
+		31A69ACC2C64878600165025 /* ListProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProducts.swift; sourceTree = "<group>"; };
+		31A69ACF2C64910A00165025 /* ActionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionListView.swift; sourceTree = "<group>"; };
+		31A69AD12C64941200165025 /* ProductAmountEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAmountEnum.swift; sourceTree = "<group>"; };
+		31A69AD32C64967500165025 /* CountryEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryEnum.swift; sourceTree = "<group>"; };
+		31A69AD62C64976100165025 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		31A69AD82C649C9200165025 /* RoundedCornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerShape.swift; sourceTree = "<group>"; };
+		31A69ADA2C64AF0700165025 /* AddingProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingProductView.swift; sourceTree = "<group>"; };
+		31A69ADC2C64B52C00165025 /* Double+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ex.swift"; sourceTree = "<group>"; };
+		31A69ADE2C64B90A00165025 /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		31A69AE02C650FC600165025 /* CountryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryLabel.swift; sourceTree = "<group>"; };
+		31A69AE22C6511C200165025 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		31A69AE42C6511CE00165025 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +90,7 @@
 		31A69A9B2C639D6A00165025 /* TestTask1221 */ = {
 			isa = PBXGroup;
 			children = (
+				31A69AC92C6486F900165025 /* Data */,
 				31A69AC22C63BF7300165025 /* Info.plist */,
 				31A69AAC2C639FC000165025 /* Application */,
 				31A69AAF2C639FE400165025 /* Resources */,
@@ -102,8 +129,12 @@
 		31A69AAE2C639FCE00165025 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				31A69AD52C64975400165025 /* UI */,
+				31A69ACE2C6490FF00165025 /* Common */,
 				31A69AB82C63A94700165025 /* Products */,
 				31A69A9E2C639D6A00165025 /* MainView.swift */,
+				31A69AE22C6511C200165025 /* ListView.swift */,
+				31A69AE42C6511CE00165025 /* GridView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -130,6 +161,8 @@
 			children = (
 				31A69AB22C63A0D900165025 /* PriceLabelsEnum.swift */,
 				31A69AB62C63A2CB00165025 /* ProductsViewTypeEnum.swift */,
+				31A69AD32C64967500165025 /* CountryEnum.swift */,
+				31A69AD12C64941200165025 /* ProductAmountEnum.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -137,8 +170,8 @@
 		31A69AB82C63A94700165025 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				31A69AB92C63A95700165025 /* GridProductView.swift */,
-				31A69ABB2C63A96100165025 /* ListProductView.swift */,
+				31A69AB92C63A95700165025 /* GridItemView.swift */,
+				31A69ABB2C63A96100165025 /* ListItemView.swift */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -149,6 +182,44 @@
 				31A69AC32C63C1C100165025 /* CeraRoundPro-Bold.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		31A69AC82C6486E500165025 /* MockProducts */ = {
+			isa = PBXGroup;
+			children = (
+				31A69ACA2C64877D00165025 /* GridProducts.swift */,
+				31A69ACC2C64878600165025 /* ListProducts.swift */,
+			);
+			path = MockProducts;
+			sourceTree = "<group>";
+		};
+		31A69AC92C6486F900165025 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				31A69AC82C6486E500165025 /* MockProducts */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		31A69ACE2C6490FF00165025 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				31A69ACF2C64910A00165025 /* ActionListView.swift */,
+				31A69ADE2C64B90A00165025 /* PriceView.swift */,
+				31A69ADA2C64AF0700165025 /* AddingProductView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		31A69AD52C64975400165025 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				31A69AD62C64976100165025 /* String+Ex.swift */,
+				31A69AD82C649C9200165025 /* RoundedCornerShape.swift */,
+				31A69ADC2C64B52C00165025 /* Double+Ex.swift */,
+				31A69AE02C650FC600165025 /* CountryLabel.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,13 +293,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31A69ABA2C63A95700165025 /* GridProductView.swift in Sources */,
+				31A69AD92C649C9200165025 /* RoundedCornerShape.swift in Sources */,
+				31A69AE32C6511C200165025 /* ListView.swift in Sources */,
+				31A69AD02C64910A00165025 /* ActionListView.swift in Sources */,
+				31A69ABA2C63A95700165025 /* GridItemView.swift in Sources */,
 				31A69AB72C63A2CB00165025 /* ProductsViewTypeEnum.swift in Sources */,
-				31A69ABC2C63A96100165025 /* ListProductView.swift in Sources */,
+				31A69ADF2C64B90A00165025 /* PriceView.swift in Sources */,
+				31A69AE12C650FC600165025 /* CountryLabel.swift in Sources */,
+				31A69AD72C64976100165025 /* String+Ex.swift in Sources */,
+				31A69ABC2C63A96100165025 /* ListItemView.swift in Sources */,
 				31A69A9F2C639D6A00165025 /* MainView.swift in Sources */,
+				31A69ADB2C64AF0700165025 /* AddingProductView.swift in Sources */,
+				31A69AD42C64967500165025 /* CountryEnum.swift in Sources */,
 				31A69AB52C63A16100165025 /* Product.swift in Sources */,
+				31A69ACD2C64878600165025 /* ListProducts.swift in Sources */,
 				31A69A9D2C639D6A00165025 /* TestTask1221App.swift in Sources */,
 				31A69AB32C63A0D900165025 /* PriceLabelsEnum.swift in Sources */,
+				31A69ADD2C64B52C00165025 /* Double+Ex.swift in Sources */,
+				31A69AD22C64941200165025 /* ProductAmountEnum.swift in Sources */,
+				31A69AE52C6511CE00165025 /* GridView.swift in Sources */,
+				31A69ACB2C64877D00165025 /* GridProducts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
