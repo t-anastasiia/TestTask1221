@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ListView: View {
+    
+    @EnvironmentObject var viewModel: ProductViewModel
+
     var body: some View {
         ScrollView {
             ForEach(listProducts, id: \.self) { product in
                 ListItemView(product: product)
+                    .environmentObject(viewModel)
                 Divider()
             }
         }

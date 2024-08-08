@@ -7,6 +7,6 @@
 
 import Foundation
 
-public enum CountryEnum: String {
+public enum CountryEnum: String, Codable {
     case france = "Франция"
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct PriceView: View {
     
     var product: Product
+    @EnvironmentObject var viewModel: ProductViewModel
     @Binding var isAddingToCartIsOpen: Bool
     @Binding var selectedAmountType: ProductAmountEnum
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum ProductAmountEnum {
+public enum ProductAmountEnum: Codable {
     case piece
     case weight
     case both

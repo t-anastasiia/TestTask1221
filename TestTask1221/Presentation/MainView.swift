@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     
+    @StateObject var viewModel = ProductViewModel(useCase: ProductUseCase(repository: ProductRepository(localDataSource: ProductLocalDataSource())))
+    
     @State private var selectedProductsViewType: ProductsViewTypeEnum = .list
     
     var body: some View {
@@ -17,8 +19,10 @@ struct MainView: View {
             Divider()
             if selectedProductsViewType == .list {
                 ListView()
+                    .environmentObject(viewModel)
             } else {
                 GridView()
+                    .environmentObject(viewModel)
             }
         }
     }

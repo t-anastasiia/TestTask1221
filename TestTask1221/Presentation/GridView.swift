@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct GridView: View {
+    
+    @EnvironmentObject var viewModel: ProductViewModel
+
     var body: some View {
         
         let columns = [
@@ -19,6 +22,7 @@ struct GridView: View {
             LazyVGrid(columns: columns, spacing: 7) {
                 ForEach(gridProduct, id: \.self) { product in
                     GridItemView(product: product)
+                        .environmentObject(viewModel)
                 }
             }
         }

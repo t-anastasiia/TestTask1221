@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ListItemView: View {
     
+    @EnvironmentObject var viewModel: ProductViewModel
+    
     var product: Product
     
     @State var isLiked: Bool = false
@@ -24,6 +26,17 @@ struct ListItemView: View {
         }
         .frame(height: 144)
         .padding(.vertical, 20)
+        .onChange(of: isAddingToCartIsOpen) {
+            if isAddingToCartIsOpen {
+                Task {
+                    await viewModel.addToCart(product: product)
+                }
+            } else {
+                Task {
+                    await viewModel.removeFromCart(product: product)
+                }
+            }
+        }
     }
 }
 
@@ -69,6 +82,7 @@ extension ListItemView {
                 PriceView(product: product,
                           isAddingToCartIsOpen: $isAddingToCartIsOpen,
                           selectedAmountType: $selectedAmountType)
+                .environmentObject(viewModel)
             }
         }
     }

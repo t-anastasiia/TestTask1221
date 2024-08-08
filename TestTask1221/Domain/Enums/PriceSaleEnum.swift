@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum PriceSaleEnum: String {
+public enum PriceSaleEnum: String, Codable {
     case hitPrice = "Удар по ценам"
     case new = "Новинки"
     case cardPrice = "Цена по карте"

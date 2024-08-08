@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GridItemView: View {
     
+    @EnvironmentObject var viewModel: ProductViewModel
+    
     var product: Product
     
     @State private var isAddingToCartIsOpen = false
@@ -48,10 +50,26 @@ struct GridItemView: View {
         )
         .compositingGroup()
         .shadow(color: Color("ShadowColor001"), radius: 8, x: 0, y: 0)
+        .onChange(of: isAddingToCartIsOpen) {
+            if isAddingToCartIsOpen {
+                Task {
+                    await viewModel.addToCart(product: product)
+                }
+            } else {
+                Task {
+                    await viewModel.removeFromCart(product: product)
+                }
+            }
+        }
     }
 }
 
 extension GridItemView {
+    func printCartContents() {
+        for item in viewModel.productsCart {
+            print("\(item.name) - \(item.id)")
+        }
+    }
     var infoView: some View {
         VStack(spacing: 0) {
             HStack(spacing: 0) {
@@ -84,6 +102,7 @@ extension GridItemView {
                 PriceView(product: product,
                           isAddingToCartIsOpen: $isAddingToCartIsOpen,
                           selectedAmountType: $selectedAmountType)
+                .environmentObject(viewModel)
             }
         }
     }
