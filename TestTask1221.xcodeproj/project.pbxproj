@@ -50,7 +50,7 @@
 		31A69AB92C63A95700165025 /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 		31A69ABB2C63A96100165025 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		31A69AC22C63BF7300165025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		31A69AC32C63C1C100165025 /* CeraRoundPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CeraRoundPro-Bold.otf"; path = "../../../../../Downloads/CeraRoundPRO/CeraRoundPro-Bold.otf"; sourceTree = "<group>"; };
+		31A69AC32C63C1C100165025 /* CeraRoundPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CeraRoundPro-Bold.otf"; sourceTree = "<group>"; };
 		31A69ACA2C64877D00165025 /* GridProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridProducts.swift; sourceTree = "<group>"; };
 		31A69ACC2C64878600165025 /* ListProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProducts.swift; sourceTree = "<group>"; };
 		31A69ACF2C64910A00165025 /* ActionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionListView.swift; sourceTree = "<group>"; };
