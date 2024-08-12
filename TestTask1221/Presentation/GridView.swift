@@ -14,9 +14,7 @@ struct GridView: View {
     var body: some View {
         
         let columns = [
-            GridItem(.flexible(), spacing: -35),
-            GridItem(.flexible())
-        ]
+            GridItem(.adaptive(minimum: 160))]
         
         ScrollView {
             LazyVGrid(columns: columns, spacing: 7) {
@@ -25,10 +23,12 @@ struct GridView: View {
                         .environmentObject(viewModel)
                 }
             }
+            .padding(.horizontal, 16)
         }
     }
 }
 
 #Preview {
     GridView()
+        .environmentObject(ProductViewModel(useCase: ProductUseCase(repository: ProductRepository(localDataSource: ProductLocalDataSource()))))
 }

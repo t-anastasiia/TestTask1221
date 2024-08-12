@@ -33,9 +33,13 @@ extension MainView {
         HStack {
             Button {
                 if selectedProductsViewType == .grid {
-                    selectedProductsViewType = .list
+                    withAnimation {
+                        selectedProductsViewType = .list
+                    }
                 } else {
-                    selectedProductsViewType = .grid
+                    withAnimation {
+                        selectedProductsViewType = .grid
+                    }
                 }
             } label: {
                 catalogTypeButton
@@ -50,11 +54,11 @@ extension MainView {
     var catalogTypeButton: some View {
         HStack {
             if selectedProductsViewType == .grid {
-                Image(systemName: "square.grid.2x2")
+                Image("gridIcon")
                     .resizable()
                     .frame(width: 16, height: 16)
             } else {
-                Image(systemName: "rectangle.grid.1x2")
+                Image("listIcon")
                     .resizable()
                     .frame(width: 16, height: 16)
             }

@@ -26,4 +26,5 @@ struct ListView: View {
 
 #Preview {
     ListView()
+        .environmentObject(ProductViewModel(useCase: ProductUseCase(repository: ProductRepository(localDataSource: ProductLocalDataSource()))))
 }
