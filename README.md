@@ -4,8 +4,18 @@
 
 <h1 align="center">List and grid practice</h1>
 <div align="center">
-  Описание ТЗ: https://docs.google.com/document/d/1CQJgwjkWo56h6nBSeC5yh7ljUsxaSKM7yZhSFBscVbY/edit?usp=sharing
-  Дизайн в Figma на основании которого делалось ТЗ: https://www.figma.com/design/1VrYJ62cSC7yFJWsuUD3xa/Spar-Intern-Task?node-id=0-1&t=czwAI0GTDVI4caZS-0
+  
+  <li>
+    <a href="https://docs.google.com/document/d/1CQJgwjkWo56h6nBSeC5yh7ljUsxaSKM7yZhSFBscVbY/edit?usp=sharing">
+      Описание ТЗ
+    </a> 
+  </li>
+  
+  <li>
+    <a href="https://www.figma.com/design/1VrYJ62cSC7yFJWsuUD3xa/Spar-Intern-Task?node-id=0-1&t=czwAI0GTDVI4caZS-0">
+      Дизайн в Figma
+    </a> 
+  </li>
 </div>
 <h2 align="center">Установка и локальный запуск</h2>
 <p align="center">
