@@ -49,7 +49,7 @@
 
 <h2 align="center">Демонстрация работы приложения</h2>
 <div align="center">
-  <img src=">
+  <img src="https://s4.ezgif.com/tmp/ezgif-4-0d39051ebb.gif">
 </div>
 
 
